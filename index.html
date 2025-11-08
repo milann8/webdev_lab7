@@ -1,1 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lab 7</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body class="center">
+    <h1>Basic JavaScript Event Handling and DOM</h1>
+    <p>Remember to watch the video in the repository to see how your output should function</p>
+    <form id="container">
+        <label for="entry_input">Enter a Message:</label>
+        <input type="text" id="entry_input">
+        <button type="button" id="entrybutton">Alert Me</button>
+    </form>
+    <div id="result">
+        <h3>Show results here</h3>
+    </div> 
+   
 
+    <script src="js/script.js">
+        function myEventFunct(){
+            var message = document.getElementById('entry_input').value;
+            alert("Milan: " + message);
+            document.getElementById('result').innerHTML = "<h3>" + message + "</h3>";
+        }
+        var result= document.getElementById('entrybutton');
+        result.addEventListener('click',myEventFunct)
+    </script>
+</body>
+</html>
