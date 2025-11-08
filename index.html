@@ -12,18 +12,9 @@
         <input type="text" id="entry_input">
         <button type="button" id="entrybutton">Alert Me</button>
     </form>
-    <h3 id="result">Show results here</h3>
- 
-   
-
-    <script src="js/script.js">
-        function myEventFunct(){
-            var message = document.getElementById('entry_input').value;
-            alert("Milan: " + message);
-            document.getElementById('result').innerHTML = "<h3>" + message + "</h3>";
-        }
-        var result= document.getElementById('entrybutton');
-        result.addEventListener('click',myEventFunct)
-    </script>
+    <div id="result">
+        <h3>Show results here</h3>
+    </div> 
+    <script src="js/script.js"></script>
 </body>
 </html>
